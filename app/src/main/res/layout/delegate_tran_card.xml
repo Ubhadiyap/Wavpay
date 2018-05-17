@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0.1"
+        android:background="#A0A0A0" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout style="@style/ll_h">
+            <TextView
+                style="@style/tv_name"
+                android:text="@string/n_name" />
+
+            <EditText
+                android:id="@+id/et_account"
+                style="@style/et_number"
+                android:hint="@string/e_name"
+                android:inputType="text" />
+        </LinearLayout>
+
+        <View style="@style/v_w" />
+
+        <LinearLayout style="@style/ll_h">
+
+            <TextView
+                style="@style/tv_name"
+                android:text="@string/card_id" />
+
+            <EditText
+                android:id="@+id/et_code"
+                style="@style/et_number" />
+        </LinearLayout>
+
+        <View style="@style/v_w" />
+
+        <LinearLayout
+            android:id="@+id/ll_type"
+            style="@style/ll_h">
+
+            <TextView
+                style="@style/tv_name"
+                android:text="@string/c_card_type" />
+
+            <TextView
+                android:id="@+id/et_type"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:hint="Enter Please Choose Type"
+                android:textSize="@dimen/sp_12" />
+
+            <ImageView
+                android:layout_width="@dimen/dp_16"
+                android:layout_height="@dimen/dp_16"
+                android:src="@mipmap/arrows_b_r" />
+        </LinearLayout>
+
+        <View style="@style/v_w" />
+
+        <LinearLayout style="@style/ll_h">
+
+            <TextView
+                style="@style/tv_name"
+                android:text="@string/amount" />
+
+            <EditText
+                android:id="@+id/et_pass"
+                style="@style/et_number"
+                android:inputType="numberDecimal"
+                android:hint="@string/c_card_amount" />
+        </LinearLayout>
+
+        <View style="@style/v_w" />
+
+        <LinearLayout style="@style/ll_h">
+
+            <TextView
+                style="@style/tv_name"
+                android:text="Memo" />
+            <EditText
+                android:id="@+id/et_memo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:textSize="@dimen/sp_12"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:hint="Optional" />
+        </LinearLayout>
+
+        <View style="@style/v_w" />
+        <LinearLayout
+            android:id="@+id/ll_select"
+            style="@style/ll_h">
+
+            <TextView
+                style="@style/tv_name"
+                android:layout_width="wrap_content"
+                android:text="@string/order_payment" />
+
+            <TextView
+                android:id="@+id/tv_ibd"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center|right"
+                android:textSize="@dimen/sp_12" />
+
+            <ImageView
+                android:layout_width="@dimen/dp_16"
+                android:layout_height="@dimen/dp_16"
+                android:src="@mipmap/arrows_b_r" />
+        </LinearLayout>
+
+        <View style="@style/v_w" />
+
+        <Button
+            android:id="@+id/btn_next"
+            style="@style/btn_next"
+            android:background="#4A90E2"
+            android:text="@string/next" />
+    </LinearLayout>
+</LinearLayout>

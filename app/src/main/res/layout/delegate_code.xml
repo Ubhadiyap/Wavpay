@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0.1"
+        android:background="#A0A0A0" />
+
+    <LinearLayout style="@style/ll_h">
+
+        <TextView
+            style="@style/tv_name"
+            android:layout_width="wrap_content"
+            android:text="@string/n_code" />
+
+        <EditText
+            android:id="@+id/et_code"
+            style="@style/et_number"
+            android:hint="@string/h_et_code" />
+
+        <TextView
+            android:id="@+id/btn_code"
+            style="@style/tv_name"
+            android:text="@string/btn_code"
+            android:gravity="right"
+            android:textColor="@color/colorPrimary" />
+    </LinearLayout>
+
+    <View style="@style/v_w" />
+
+    <Button
+        android:id="@+id/btn_next"
+        style="@style/btn_next"
+        android:background="#4A90E2"
+        android:text="@string/confirm" />
+</LinearLayout>

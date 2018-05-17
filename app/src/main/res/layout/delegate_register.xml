@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout style="@style/ll_h"
+            android:layout_marginTop="@dimen/dp_100">
+            <TextView
+                style="@style/tv_name"
+                android:layout_width="@dimen/dp_100"
+                android:text="@string/r_password" />
+
+            <EditText
+                android:id="@+id/et_pass"
+                style="@style/et_pass"
+                android:hint="Key in password" />
+        </LinearLayout>
+        <View style="@style/v_w"/>
+        <LinearLayout style="@style/ll_h">
+            <TextView
+                style="@style/tv_name"
+                android:layout_width="@dimen/dp_100"
+                android:text="@string/r_pin" />
+            <EditText
+                android:id="@+id/et_pin"
+                style="@style/et_pass"
+                android:inputType="numberPassword"
+                android:hint="key in Payment PIN,Length is 6"/>
+        </LinearLayout>
+        <View style="@style/v_w"/>
+        <LinearLayout style="@style/ll_h"
+            android:layout_marginBottom="@dimen/dp_80"
+            android:gravity="center_vertical">
+            <CheckBox
+                android:id="@+id/check"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv_agree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp_16"
+                android:layout_marginLeft="@dimen/dp_15"
+                android:textColor="@color/accept"
+                android:text="I agree with agreement"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/next"
+        style="@style/btn_next"
+        android:text="@string/next"
+        android:background="@drawable/next_bg"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dp_30" />
+</RelativeLayout>

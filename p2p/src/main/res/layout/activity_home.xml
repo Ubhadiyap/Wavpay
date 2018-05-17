@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    style="@style/RootViewStyle"
+    tools:context="com.hbyundu.shop.ui.home.HomeActivity">
+
+    <FrameLayout
+        android:id="@+id/activity_home_content_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <View style="@style/HorizontalDivideStyle" />
+
+
+
+    <android.support.v4.app.FragmentTabHost
+        android:id="@+id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/home_tab_bar_height"
+        android:background="@android:color/white">
+
+        <FrameLayout
+            android:id="@+id/tabcontent"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="0" />
+
+
+    </android.support.v4.app.FragmentTabHost>
+
+
+
+</LinearLayout>

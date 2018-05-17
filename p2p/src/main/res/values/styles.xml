@@ -1,0 +1,67 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorTitleBar</item>
+        <item name="android:textColorPrimary">@android:color/white</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="ToolbarStyle" parent="@style/ThemeOverlay.AppCompat.ActionBar">
+        <item name="actionMenuTextColor">@android:color/white</item>
+    </style>
+
+    <style name="TranslucentStatusRootViewStyle">
+        <item name="android:fitsSystemWindows">true</item>
+        <item name="android:clipToPadding">true</item>
+    </style>
+
+    <style name="RootViewStyle" parent="TranslucentStatusRootViewStyle">
+        <item name="android:fitsSystemWindows">true</item>
+        <item name="android:clipToPadding">true</item>
+        <item name="android:background">@color/colorRootBackground</item>
+    </style>
+
+    <!--横向分割线-->
+    <style name="HorizontalDivideStyle">
+        <item name="android:layout_height">@dimen/horizontal_divide_height</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@color/colorDivide</item>
+    </style>
+
+    <style name="VerticalDivideStyle">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">@dimen/vertical_divide_width</item>
+        <item name="android:background">@color/colorDivide</item>
+    </style>
+
+    <style name="Button.Blue" parent="Widget.AppCompat.Button.Colored">
+        <item name="colorButtonNormal">@color/colorBlueButton</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="TextWhiteNormal">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="SplashTheme" parent="AppTheme">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@mipmap/ic_p2p_splash</item>
+    </style>
+
+    <style name="AlertDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <!-- Used for the title and text -->
+        <item name="android:textColorPrimary">#000000</item>
+        <!-- Used for the background -->
+        <item name="android:background">#FFFFFF</item>
+    </style>
+
+</resources>

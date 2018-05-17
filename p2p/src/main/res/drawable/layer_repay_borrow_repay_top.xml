@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item>
+        <shape android:shape="rectangle" >
+            <gradient
+                android:endColor="@color/line_horizontal"
+                android:startColor="@color/line_horizontal" />
+
+
+        </shape>
+    </item>
+    <item
+        android:bottom="1dp"
+        android:left="0dp"
+        android:right="0dp"
+        android:top="0dp">
+        <shape android:shape="rectangle" >
+            <gradient
+                android:endColor="#FDFDE1"
+                android:startColor="#FDFDE1" />
+
+
+        </shape>
+    </item>
+
+</layer-list>

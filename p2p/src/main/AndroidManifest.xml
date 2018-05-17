@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hbyundu.shop">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application android:theme="@style/AppTheme">
+        <activity
+            android:name=".ui.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme" />
+        <activity
+            android:name=".ui.home.HomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.goods.detail.GoodsDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.goods.list.GoodsListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.goods.detail.GoodsConfirmActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.goods.detail.GoodsDeliveryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.goods.search.GoodsSearchActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.credit.apply.ApplyLoansActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".ui.credit.apply.ApplyLoansRateActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".ui.credit.apply.ApplyLoanListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.credit.apply.ApplyLoanDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.credit.apply.ApplyGoodsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".ui.credit.invest.list.InvestListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.credit.invest.detail.InvestProjectDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.credit.invest.confirm.InvestConfirmBidActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".ui.credit.invest.my.InvestMineActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.credit.invest.my.InvestMineProjectDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.credit.repay.RepayBorrowListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.credit.repay.RepayBorrowRepayActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.launcher.LoginActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".ui.launcher.RegisterActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".ui.launcher.ForgetPwdActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".ui.order.list.OrderListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.order.detail.OrderDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.order.repay.OrderRepayActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.launcher.ChangePwdActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.credit.invest.recharge.RechargeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.launcher.ChangePwdChoiceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.launcher.ChangePayPasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.credit.withdraw.WithDrawListActivity"
+            android:screenOrientation="portrait" />
+        <receiver
+            android:name=".receiver.WavReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.hbyundu.shop.wav.SET_USER" />
+                <action android:name="com.hbyundu.shop.wav.CLEAR_USER" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/RootViewStyle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_title_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:orientation="vertical">
+
+            <com.hbyundu.shop.vendor.widget.NoScrollListView
+                android:id="@+id/activity_loans_rate_apply_rate_lv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </com.hbyundu.shop.vendor.widget.NoScrollListView>
+
+            <View
+                style="@style/HorizontalDivideStyle" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/apply_loan_upload_prompt"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="10dp"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <com.hbyundu.shop.vendor.widget.NoScrollGridView
+                android:id="@+id/activity_loans_rate_apply_photo_gv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:cacheColorHint="@android:color/transparent"
+                android:listSelector="@null"
+                android:numColumns="3"
+                android:scrollbars="none"
+                android:verticalSpacing="12dp" />
+
+            <Button
+                android:id="@+id/activity_loans_rate_apply_submit_btn"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:layout_margin="6dp"
+                android:background="@color/colorTitleBar"
+                android:text="@string/loans_apply_submit"
+                android:textColor="@color/colorRecommendTabTextSelected" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

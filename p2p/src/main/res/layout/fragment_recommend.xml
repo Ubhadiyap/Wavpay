@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.hbyundu.shop.ui.recommend.RecommendFragment">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorTitleBar">
+
+        <TextView
+            android:id="@+id/fragment_recommend_search_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/bg_search_bar"
+            android:drawableLeft="@mipmap/places_ic_search"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="12dp"
+            android:text="@string/search"
+            android:textColor="#6F7060"
+            android:textSize="16sp" />
+    </FrameLayout>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/fragment_recommend_tl"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/colorTitleBar"
+        android:visibility="invisible">
+
+    </android.support.design.widget.TabLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/fragment_recommend_content_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_information"
+        android:icon="@mipmap/information"
+        android:title="@string/Information" />
+    <item
+        android:id="@+id/nav_security"
+        android:icon="@mipmap/security"
+        android:title="@string/security" />
+    <item
+        android:id="@+id/nav_message"
+        android:icon="@mipmap/message"
+        android:title="@string/message" />
+    <item
+        android:id="@+id/nav_setting"
+        android:icon="@mipmap/setting"
+        android:title="@string/setting" />
+    <!--<item-->
+        <!--android:id="@+id/nav_agreement"-->
+        <!--android:icon="@mipmap/agreement"-->
+        <!--android:title="Agreement" />-->
+    <item
+        android:id="@+id/nav_about_payment"
+        android:icon="@mipmap/about"
+        android:title="@string/about" />
+
+    <item
+        android:id="@+id/nav_logout"
+        android:title="@string/loginOut" />
+</menu>

@@ -1,0 +1,78 @@
+<resources>
+
+    <!-- SlidingMenu配置 -->
+    <dimen name="shadow_width">16dp</dimen>
+    <dimen name="slidingmenu_offset">100dp</dimen>
+    <!-- 标题栏 -->
+    <dimen name="title_bottom_size">12sp</dimen>
+    <dimen name="title_size">20sp</dimen>
+    <dimen name="title_sub_size">17sp</dimen>
+    <dimen name="title_height">60dp</dimen>
+    <!-- 页面间距 -->
+    <dimen name="page_space">15dp</dimen>
+    <!-- 输入框高度 -->
+    <dimen name="edit_height">40dp</dimen>
+
+    <!-- 注册输入框左边距 -->
+    <dimen name="margin_left_edt_registe">10dp</dimen>
+
+    <!-- 注册按钮高度 -->
+    <dimen name="height_btn_registe">50dp</dimen>
+
+    <!-- 个人中心界面item项左边图片宽度 -->
+    <dimen name="width_personal_center_left_ic_image">50dp</dimen>
+    <dimen name="height_personal_center_left_ic_image">50dp</dimen>
+
+    <!-- 个人中心界面上半部布局高度 -->
+    <dimen name="height_personal_center_top_bar">140dp</dimen>
+    <!-- 个人中心用户名字体大小 -->
+    <dimen name="size_text_personal_center_username">20sp</dimen>
+    <!-- 个人中心金钱字体大小 -->
+    <dimen name="size_text_personal_center_money">17sp</dimen>
+    <!-- 会员中心金钱 label字体大小 -->
+    <dimen name="size_text_personal_center_money_label">15sp</dimen>
+
+    <!-- 搜索界面条件label字体大小 -->
+    <dimen name="size_text_search_deals_condition_label">16sp</dimen>
+
+    <!-- 菜单界面item项左边图片宽度 -->
+    <dimen name="width_menu_item_left_ic_image">40dp</dimen>
+    <dimen name="height_menu_item_left_ic_image">40dp</dimen>
+
+    <!-- 注册界面item项左边图片宽度 -->
+    <dimen name="width_registe_left_ic_image">30dp</dimen>
+    <dimen name="height_registe_left_ic_image">30dp</dimen>
+
+    <!-- 搜索界面item项左边图片宽度 -->
+    <dimen name="width_search_left_ic_image">30dp</dimen>
+    <dimen name="height_search_left_ic_image">30dp</dimen>
+
+    <!-- 搜索界面item项左边边距 -->
+    <dimen name="margin_left_search_item">10dp</dimen>
+    
+    <!-- 会员中心每项高度 -->
+    <dimen name="height_personal_center_item">60dp</dimen>
+    
+    <!-- 项目详情每项高度 -->
+    <dimen name="height_project_detail_item">40dp</dimen>
+    
+    <!-- 确认投标每项高度 -->
+    <dimen name="height_confirm_bid_item">40dp</dimen>
+    
+    <!-- 申请提现每项高度 -->
+    <dimen name="height_apply_withdraw_item">40dp</dimen>
+    
+    <!-- 添加银行卡每项高度 -->
+    <dimen name="height_add_bank_card_item">50dp</dimen>
+    
+    
+    <dimen name="corner_bg">3dp</dimen>
+    
+    
+    <dimen name="height_lsv_item">150dp</dimen>
+    
+    <!-- 圆形进度条的文字大小 -->
+    <dimen name="text_pgb_round">12dp</dimen>
+    <dimen name="width_pgb_round">3dp</dimen>
+
+</resources>

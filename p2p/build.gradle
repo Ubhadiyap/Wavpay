@@ -1,0 +1,87 @@
+apply plugin: 'com.android.library'
+
+def getServer() {
+    if (project.APP_ENV == 'development') {
+        return project.APP_ENV_DEVELOPMENT_SERVER
+    } else if (project.APP_ENV == 'test') {
+        return project.APP_ENV_TEST_SERVER
+    } else if (project.APP_ENV == 'production') {
+        return project.APP_ENV_PRODUCTION_SERVER
+    }
+    return ''
+}
+
+def getApiServer() {
+    if (project.APP_ENV == 'development') {
+        return project.APP_ENV_DEVELOPMENT_API_SERVER
+    } else if (project.APP_ENV == 'test') {
+        return project.APP_ENV_TEST_API_SERVER
+    } else if (project.APP_ENV == 'production') {
+        return project.APP_ENV_PRODUCTION_API_SERVER
+    }
+    return ''
+}
+
+def getWavServer() {
+    return project.WAV_SERVER
+}
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion "26.0.0"
+    defaultConfig {
+        minSdkVersion 15
+        targetSdkVersion 26
+        versionCode 6
+        versionName "1.0.5"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        resValue "string", "tray__authority", "com.hbyundu.shop.tray"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+            buildConfigField "String", "SERVER", getServer()
+            buildConfigField "String", "API_SERVER", getApiServer()
+            buildConfigField "String", "WAV_SERVER", getWavServer()
+        }
+
+        debug {
+            buildConfigField "String", "SERVER", getServer()
+            buildConfigField "String", "API_SERVER", getApiServer()
+            buildConfigField "String", "WAV_SERVER", getWavServer()
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.android.support:support-v4:26+'
+    compile 'com.android.support:appcompat-v7:26+'
+    compile 'com.android.support:design:26+'
+    compile 'com.github.longegit:android-tabbadgeview:1.0.7'
+    compile 'com.readystatesoftware.systembartint:systembartint:1.0.3'
+    compile 'com.bigkoo:convenientbanner:2.0.5'
+    compile 'com.github.Rukey7:TagLayout:1.0.6'
+    compile 'com.github.longegit:Android-MaterialRefreshLayout:1.3.3'
+    compile 'io.reactivex:rxandroid:1.2.1'
+    compile 'io.reactivex:rxjava:1.1.6'
+    compile 'com.squareup.retrofit2:retrofit:2.1.0'
+    compile 'com.squareup.retrofit2:adapter-rxjava:2.1.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.1.0'
+    compile 'com.github.longegit:Android-SVProgressHUD:v1.0'
+    compile 'com.github.longegit:android-validator:v1.0'
+    compile 'com.github.bumptech.glide:glide:4.3.1'
+    compile 'net.grandcentrix.tray:tray:0.11.0'
+    compile 'me.himanshusoni.quantityview:quantity-view:1.2.0'
+    compile 'com.github.longegit:android-pull-to-refresh:v1.0'
+    compile 'org.simple:androideventbus:1.0.5.1'
+    compile 'com.github.longegit:android-TakePhoto:v4.0.5'
+    compile files('libs/ioc-1.0.0.jar')
+}

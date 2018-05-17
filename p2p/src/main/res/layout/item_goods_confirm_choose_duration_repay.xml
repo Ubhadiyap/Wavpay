@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical">
+
+    <RadioButton
+        android:id="@+id/item_goods_confirm_choose_duration_rb"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_goods_choose_duration"
+        android:layout_marginTop="10dp"
+        android:button="@null" />
+
+    <TextView
+        android:id="@+id/item_goods_confirm_choose_duration_repay_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="15dp"
+        android:text="RM 110 * 3 Months"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/item_goods_confirm_choose_duration_repay_tv"
+        android:layout_alignRight="@id/item_goods_confirm_choose_duration_repay_tv"
+        android:layout_below="@id/item_goods_confirm_choose_duration_repay_tv"
+        android:text="@string/processing_fee_included"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="13sp" />
+
+</RelativeLayout>

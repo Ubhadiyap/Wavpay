@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_60"
+        android:background="@color/bg"
+        android:paddingTop="@dimen/dp_20">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            style="@style/iv_32"
+            android:paddingRight="@dimen/dp_10"
+            android:paddingTop="@dimen/dp_7"
+            android:paddingBottom="@dimen/dp_7"/>
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/tv_title" />
+    </android.support.v7.widget.Toolbar>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0.1"
+        android:background="#A0A0A0" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout style="@style/ll_h">
+            <TextView
+                style="@style/tv_name"
+                android:layout_width="@dimen/dp_100"
+                android:text="@string/l_username" />
+            <EditText
+                android:id="@+id/et_account"
+                style="@style/et_number"
+                android:hint="@string/m_number" />
+        </LinearLayout>
+
+        <View style="@style/v_w" />
+        <LinearLayout style="@style/ll_h">
+            <TextView
+                style="@style/tv_name"
+                android:layout_width="@dimen/dp_100"
+                android:text="@string/n_code"/>
+
+            <EditText
+                android:id="@+id/et_code"
+                style="@style/et_number"
+                android:hint="@string/h_et_code"/>
+
+            <TextView
+                android:id="@+id/btn_code"
+                style="@style/tv_name"
+                android:text="@string/btn_code"
+                android:textSize="@dimen/sp_12"
+                android:gravity="right"
+                android:textColor="@color/colorPrimary"/>
+        </LinearLayout>
+
+        <View style="@style/v_w" />
+
+        <LinearLayout style="@style/ll_h">
+
+            <TextView
+                style="@style/tv_name"
+                android:text="@string/password"
+                android:layout_width="@dimen/dp_100"/>
+
+            <EditText
+                android:id="@+id/et_pass"
+                style="@style/et_pass"
+                android:hint="@string/h_et_pass" />
+        </LinearLayout>
+        <View style="@style/v_w" />
+
+        <Button
+            android:id="@+id/btn_next"
+            style="@style/btn_next"
+            android:background="@color/app_bg"
+            android:text="@string/next"/>
+    </LinearLayout>
+</LinearLayout>

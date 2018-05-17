@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="photo_source">
+        <item>Take a photo</item>
+        <item>Album</item>
+    </string-array>
+    <string-array name="pay_way">
+        <item>Balance</item>
+        <item>Installment</item>
+    </string-array>
+</resources>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv_photo"
+        android:layout_width="@dimen/dp_80"
+        android:layout_height="@dimen/dp_80"
+        android:layout_marginTop="@dimen/dp_30" />
+
+    <TextView
+        android:id="@+id/tv_nick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:textSize="@dimen/sp_16" />
+
+    <TextView
+        style="@style/tv_name"
+        android:layout_gravity="left"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:text="@string/amount" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_72"
+        android:background="@color/white"
+        android:gravity="center">
+        <EditText
+            android:id="@+id/et_amount"
+            android:inputType="numberDecimal"
+            style="@style/et_radix" />
+    </LinearLayout>
+
+    <View style="@style/v_w" />
+
+    <LinearLayout style="@style/ll_h">
+
+        <EditText
+            android:id="@+id/et_msg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:hint="@string/order_et_two" />
+    </LinearLayout>
+
+    <View style="@style/v_w" />
+
+    <LinearLayout
+        android:id="@+id/ll_select"
+        style="@style/ll_h">
+
+        <TextView
+            style="@style/tv_name"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/order_payment" />
+
+        <TextView
+            android:id="@+id/tv_ibd"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center|right"
+            android:text="@string/b_balance"
+            android:textSize="@dimen/sp_10" />
+
+        <ImageView
+            style="@style/iv_32"
+            android:padding="@dimen/dp_7"
+            android:src="@mipmap/arrows_b_r" />
+    </LinearLayout>
+
+
+    <View style="@style/v_w" />
+
+    <Button
+        android:id="@+id/next"
+        style="@style/btn_next"
+        android:background="@color/app_bg"
+        android:text="@string/next" />
+</LinearLayout>

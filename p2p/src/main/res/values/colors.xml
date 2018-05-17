@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#ff4081</color>
+    <color name="colorDivide">#E9E9E9</color>
+    <color name="colorTitleBar">#3B83D7</color>
+    <color name="colorRootBackground">#F6F6F6</color>
+    <color name="colorTabBarTextSelected">#3B83D7</color>
+    <color name="colorTabBarTextNormal">#A49EA7</color>
+    <color name="colorRecommendTabTextNormal">#AAAAAA</color>
+    <color name="colorRecommendTabTextSelected">#FFFFFF</color>
+    <color name="colorBlueButton">#3B83D7</color>
+
+    <color name="background">#f1f1f1</color>
+    <color name="creditbk">#f9f9f9</color>
+</resources>

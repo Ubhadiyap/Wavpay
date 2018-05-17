@@ -1,0 +1,212 @@
+<resources>
+    <string name="app_name">WavPay</string>
+
+    <string name="hint">this is note,you can add something important here</string>
+    <string name="login_pass">Login Password</string>
+    <string name="linked_title">Forgot Password</string>
+    <string name="qr_code">Two-dimensional code expired</string>
+    <string name="confirm">Confirm</string>
+    <string name="next">Next</string>
+    <string name="amount">Amount</string>
+    <string name="e_amount">Key Amount</string>
+    <string name="amount_title">Key in Amount RM...</string>
+    <string name="order_et_two">Remarks(50 words)</string>
+    <string name="order_payment">Bank Account No:</string>
+    <string name="e_payment">Payment method</string>
+    <string name="order_toast">Please enter amount!</string>
+    <string name="payment_title">Payment PIN</string>
+    <string name="payment_text">Key in your PIN to verify</string>
+    <string name="payment_forgot">Forgot PIN?</string>
+    <string name="security_title">Security</string>
+    <string name="security_payment">Change Payment PIN</string>
+    <string name="security_login">Change password</string>
+    <string name="card_name">Please Add Card</string>
+
+    <!--公共的-->
+    <string name="countdown">Reacquire</string>
+    <string name="btn_code">Request</string>
+    <string name="code_101">Incorrect phone number format</string>
+    <string name="code_102">The number has been registered</string>
+    <string name="code_200">The verification code has been sent</string>
+    <string name="phone">Please enter the correct mobile number</string>
+    <string name="check">Please fill in the complete information</string>
+    <string name="delete">Delete</string>
+    <string name="del_s">Successfully delete</string>
+    <string name="password">Password</string>
+    <string name="sign_up">Login</string>
+    <string name="s_acc">Register</string>
+    <string name="f_pass">Forgot Password?</string>
+    <string name="m_number">Mobile number</string>
+    <string name="m_linked">Mobile Linked</string>
+    <string name="n_code">One time PIN</string>
+    <string name="home">Home</string>
+    <string name="scan">Scan</string>
+    <string name="tool">Tool</string>
+    <string name="e_name">Key in your Name</string>
+    <string name="pay_bill">Pay Bill</string>
+    <string name="n_name">Name</string>
+    <string name="card_id">Account No</string>
+    <string name="recent">Recent</string>
+    <string name="the_amount">(Balance</string>
+    <string name="more">More</string>
+    <string name="user_qr_code">Scan me! be friend</string>
+    <string name="start">Get Started</string>
+
+    <!--弹窗-->
+    <string name="d_ok">Ok</string>
+    <string name="d_cancel">Cancel</string>
+    <string name="d_content">coming soon...</string>
+    <!--支付-->
+    <string name="p_err_116">Payment password error</string>
+    <string name="p_err_110">The payment account does not exist</string>
+    <string name="p_err_111">The collection account does not exist</string>
+    <string name="p_err_112">Abnormal account</string>
+    <string name="p_err_102">not sufficient funds</string>
+    <string name="p_err_118">Bank CARDS do not exist</string>
+    <string name="p_err_114">You can\'t transfer it to yourself</string>
+    <string name="p_err_109">The type of bank card that is not supported</string>
+    <string name="p_err_108">Abnormal banking system</string>
+    <string name="p_err_103">The order has been paid</string>
+    <string name="p_err_104">The order has been closed</string>
+    <string name="p_err_119">Payment failure</string>
+    <string name="p_err_500">System error</string>
+    <string name="p_pass">Please enter 6 payment password</string>
+
+    <!--提示内容hint-->
+    <string name="h_et_pass">Key in Password</string>
+    <string name="h_et_code">key in Code</string>
+    <string name="h_et_agains">Agains</string>
+    <string name="h_card_phone">Pls key in your bank Registered phone No</string>
+
+    <!--注册Register-->
+    <string name="r_err_410">Verification code failure</string>
+    <string name="r_err_404">Verification code error</string>
+    <string name="r_err_403">Account already exists</string>
+    <string name="r_err_200">The user doesn\'t exist</string>
+    <string name="r_err_426">The user name has been registered</string>
+    <string name="r_success">Registered successfully</string>
+    <string name="r_code">Please enter the verification code</string>
+    <string name="r_pass">Please enter a password of at least 6-12 digits</string>
+    <string name="r_check">Please agree to the terms of service.</string>
+    <string name="r_re_pass">Two passwords are different</string>
+    <string name="r_phone_null">Please enter the correct mobile number</string>
+    <string name="r_password">Password</string>
+    <string name="r_pin">Payment PIN</string>
+    <!--修改-->
+    <string name="lin_s">Successful modification</string>
+    <!--登录Login-->
+    <string name="l_err_400">User name or password error</string>
+    <string name="l_err_403">Verification code failure</string>
+    <string name="l_err_404">Users don\'t exist</string>
+    <string name="l_success">Login successful</string>
+    <string name="l_err_user">Please enter the correct phone number</string>
+    <string name="l_err_pass">Please enter a password of at least 6 digits</string>
+    <string name="l_title">Welcome to \n Wavpay</string>
+    <string name="l_username">Mobile number</string>
+
+    <!--支付详情-->
+    <string name="a_p_title">Transaction Details</string>
+    <string name="p_name">Pay</string>
+
+    <!--余额-->
+    <string name="b_tran">Transaction</string>
+    <string name="b_balance">Balance</string>
+    <string name="b_w">RM</string>
+    <string name="b_m_b">My Balance</string>
+    <string name="b_top_up">Top Up</string>
+    <string name="b_wit">Withdraw</string>
+
+
+    <!--收款,付款-->
+    <string name="acc_name">Accept</string>
+    <string name="acc_title">Accept payment</string>
+    <string name="acc_bill">Statement</string>
+    <string name="a_p_money">Amount</string>
+    <string name="a_p_time">Transfer Time</string>
+    <string name="a_p_c_time">Collection time</string>
+    <string name="a_p_type">Type</string>
+    <string name="a_p_r">Receiving Side</string>
+    <string name="a_p_btn">View balance</string>
+    <string name="a_p_w">Withdrawal</string>
+    <string name="a_p_top">Top-Up</string>
+    <string name="t_company">Company</string>
+    <string name="t_account">Account</string>
+    <string name="acc_money">Receive Payment</string>
+    <string name="acc_change">Other</string>
+    <string name="pay_title">Pay</string>
+    <string name="pay_l_have">I want to pay</string>
+    <!--转账trans-->
+    <string name="tran_title">Transfer</string>
+    <string name="tran_to_wp">Transfer To Wavpay</string>
+    <string name="tran_to_card">Transfer To Card</string>
+    <string name="tran_remove">Confirm deletion of transfer records?</string>
+    <string name="tran_prompt">Prompt</string>
+    <string name="tran_contact">Contact</string>
+
+    <!--银行卡-->
+    <string name="bank_title">Card Details</string>
+    <string name="bank_binding">Remove the binding</string>
+    <string name="bank_name">Payment card name</string>
+    <string name="bank_card_no">Key in card number</string>
+    <string name="bank_card_bank">Bank</string>
+    <string name="bank_card_cvv">Cvv</string>
+    <string name="bank_card_exp">Expire date</string>
+    <string name="c_card_no">Card No</string>
+    <string name="c_card_type">Bank</string>
+    <string name="c_card_phone">Phone No</string>
+    <string name="c_card_number">Enter Card Number</string>
+    <string name="c_card_amount">Enter Amount</string>
+    <!--账单列表-->
+    <string name="bill_title">Transactions</string>
+    <string name="bill_all">All</string>
+    <string name="bill_tran">Transfer</string>
+    <string name="bill_top">Top-up</string>
+    <string name="bill_wit">Withdraw</string>
+    <string name="bill_ord">OrderPay</string>
+    <string name="bill_pay">Payment</string>
+
+    <!--侧边栏-->
+    <string name="Information">My Profile</string>
+    <string name="security">Security</string>
+    <string name="message">Message</string>
+    <string name="setting">Setting</string>
+    <string name="about">About</string>
+    <string name="loginOut">Logout</string>
+
+    <!--首页-->
+    <string name="i_bill">Statement</string>
+    <string name="i_top">Top-up</string>
+    <string name="i_acc">Accept</string>
+    <string name="i_bank">Bank Card</string>
+    <string name="top_up">Top up/Bill payment</string>
+    <string name="booking">E-Commerce</string>
+
+    <string name="mobile">Mobile</string>
+    <string name="electri">Electricity</string>
+    <string name="water">Water</string>
+    <string name="council">Council</string>
+    <string name="postpaid">Postpaid</string>
+    <string name="broadband">Broadband</string>
+    <string name="game">Game</string>
+    <string name="hotel">Hotel</string>
+    <string name="bus">Bus</string>
+    <string name="flight">Flight</string>
+    <string name="movie">Movie</string>
+    <string name="exit">Double-click on the exit</string>
+
+    <!--更新-->
+    <string name="update_title">Update tip</string>
+    <string name="update_loading">Is downloading</string>
+    <string name="update_success">The download is complete</string>
+    <string name="update_cancel">The latest version has been cancelled</string>
+    <string name="update_found">Find new version of Wavpay.</string>
+    <string name="update_judge">Whether or not to update</string>
+    
+    
+    <!--强制下线-->
+    <string name="downline_relogin">relogin</string>
+    <string name="downline_reset_password">reset password</string>
+    <string name="downline_notification">Wavpay Downline Notification</string>
+    <string name="downline_notification_message">This is a wavpay notification channel</string>
+
+</resources>

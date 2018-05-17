@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/ll_h"
+        android:layout_marginTop="@dimen/dp_100">
+
+        <TextView
+            style="@style/tv_name"
+            android:layout_width="@dimen/dp_100"
+            android:text="@string/l_username" />
+
+        <EditText
+            android:id="@+id/et_user"
+            style="@style/et_number"
+            android:hint="@string/m_number" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginRight="@dimen/dp_20"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/tv_name"
+            android:layout_width="@dimen/dp_100"
+            android:text="@string/password" />
+
+        <EditText
+            android:id="@+id/et_pass"
+            style="@style/et_pass"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:hint="@string/h_et_pass" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_login"
+        style="@style/btn_next"
+        android:background="@color/accept"
+        android:text="@string/sign_up" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp_10">
+
+        <Button
+            android:id="@+id/tv_sign_in"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:text="@string/s_acc"
+            android:textAllCaps="false"
+            android:textColor="@color/accept" />
+
+        <View style="@style/v_h" />
+
+        <Button
+            android:id="@+id/tv_forget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:text="@string/f_pass"
+            android:textAllCaps="false" />
+    </LinearLayout>
+</LinearLayout>

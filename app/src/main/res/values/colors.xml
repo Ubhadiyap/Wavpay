@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="bg">#fff</color>
+    <color name="tv_color">#000</color>
+    <color name="code">#666666</color>
+    <color name="app_bg">#3F87DA</color>
+    <color name="item">#bfbfbf</color>
+    <color name="toolbar">#3B83D7</color>
+    <color name="white">#ffffffff</color>
+    <color name="app_background">#1111</color>
+    <color name="a_bg">#EDF1F4</color>
+    <color name="green">#22B043</color>
+    <color name="green_bg">#6CC703</color>
+    <color name="accept">#4A90E2</color>
+    <color name="card_bg">#EDF1F4</color>
+    <color name="card_item_bg">#cccccc</color>
+</resources>

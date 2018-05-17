@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/item_content_goods_detail_tag_name_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <com.dl7.tag.TagLayout
+        android:id="@+id/item_content_goods_detail_tagView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tag_layout_mode="single_choice"
+        app:tag_text_size="20sp"
+        app:tag_view_bg_color="@android:color/white"
+        app:tag_view_bg_color_check="@android:color/white"
+        app:tag_view_border_color="@android:color/darker_gray"
+        app:tag_view_border_color_check="@android:color/holo_orange_light"
+        app:tag_view_border_radius="5dp"
+        app:tag_layout_vertical_interval="20dp"
+        app:tag_view_horizontal_padding="10dp"
+        app:tag_view_vertical_padding="10dp"
+        app:tag_view_text_color="@android:color/darker_gray"
+        app:tag_view_text_color_check="@android:color/holo_orange_light" />
+
+</LinearLayout>

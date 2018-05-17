@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:paddingTop="20dp"
+        android:background="@color/bg"
+        android:id="@+id/toolbar2">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            style="@style/iv_32"
+            android:paddingRight="@dimen/dp_10"
+            android:paddingTop="@dimen/dp_7"
+            android:paddingBottom="@dimen/dp_7"/>
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/tv_title"
+            android:text="@string/payment_title"/>
+    </android.support.v7.widget.Toolbar>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#A0A0A0"/>
+    <TextView
+        android:id="@+id/tv_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="23dp"
+        android:text="@string/payment_text"
+        android:textSize="20sp"
+        android:layout_below="@+id/toolbar2"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/tv_forget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/dp_25"
+        android:layout_gravity="right"
+        android:textAllCaps="false"
+        android:background="@color/transparent"
+        android:text="@string/payment_forgot"
+        android:textSize="@dimen/sp_16"
+        android:textColor="@color/a5"
+        android:layout_marginEnd="@dimen/dp_12"
+        android:layout_marginTop="@dimen/dp_17"
+        android:layout_below="@+id/pe_payment"
+        android:layout_alignEnd="@+id/pe_payment" />
+
+    <com.lan.sponge.widget.PwdEditText
+        android:id="@+id/pe_payment"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@null"
+        android:clickable="true"
+        android:inputType="number"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/tv_text"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

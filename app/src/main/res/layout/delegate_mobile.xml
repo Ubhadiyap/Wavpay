@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/include2"
+        layout="@layout/toolbar" />
+
+    <ImageView
+        android:id="@+id/iv_ad"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_120"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/include2"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/mobile_ad" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_ad"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_10"
+        android:orientation="vertical">
+        <LinearLayout style="@style/ll_h">
+
+            <TextView
+                style="@style/tv_name"
+                android:layout_width="@dimen/dp_100"
+                android:text="@string/l_username" />
+
+            <EditText
+                android:id="@+id/et_mobile"
+                style="@style/et_number"
+                android:hint="@string/m_number" />
+
+        </LinearLayout>
+
+        <View style="@style/v_w" />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/next"
+        style="@style/btn_next"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dp_30"
+        android:background="@drawable/next_bg"
+        android:text="@string/next" />
+</RelativeLayout>

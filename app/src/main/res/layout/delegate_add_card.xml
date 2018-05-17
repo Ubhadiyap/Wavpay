@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#A0A0A0" />
+
+    <LinearLayout
+        android:id="@+id/item_one"
+        style="@style/ll_h">
+
+        <TextView
+            android:id="@+id/tv_one"
+            style="@style/tv_name"
+            android:text="@string/n_name" />
+
+        <EditText
+            android:id="@+id/et_one"
+            style="@style/et_number"
+            android:inputType="text"
+            android:hint="@string/bank_name" />
+
+        <ImageView
+            style="@style/iv_32"
+            android:padding="5dp"
+            android:src="@mipmap/arrows_b_r"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <View style="@style/v_w" />
+
+    <LinearLayout
+        android:id="@+id/item_two"
+        style="@style/ll_h">
+
+        <TextView
+            android:id="@+id/tv_two"
+            style="@style/tv_name"
+            android:text="@string/c_card_no" />
+
+        <EditText
+            android:id="@+id/et_two"
+            style="@style/et_number"
+            android:hint="@string/bank_card_no" />
+
+        <ImageView
+            style="@style/iv_32"
+            android:padding="5dp"
+            android:src="@mipmap/arrows_b_r"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <View style="@style/v_w"
+        android:visibility="gone"/>
+    <LinearLayout
+        android:id="@+id/item_bank"
+        android:visibility="gone"
+        style="@style/ll_h">
+
+        <TextView
+            android:id="@+id/tv_bank"
+            style="@style/tv_name"
+            android:text="@string/bank_card_bank" />
+
+        <EditText
+            android:id="@+id/et_bank"
+            style="@style/et_number" />
+
+        <ImageView
+            style="@style/iv_32"
+            android:padding="5dp"
+            android:src="@mipmap/arrows_b_r"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <View style="@style/v_w"
+        android:visibility="gone"/>
+    <LinearLayout
+        android:id="@+id/item_cvv"
+        android:visibility="gone"
+        style="@style/ll_h">
+
+        <TextView
+            android:id="@+id/tv_cvv"
+            style="@style/tv_name"
+            android:text="@string/bank_card_cvv" />
+
+        <EditText
+            android:id="@+id/et_cvv"
+            style="@style/et_number" />
+
+        <ImageView
+            style="@style/iv_32"
+            android:padding="5dp"
+            android:src="@mipmap/arrows_b_r"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <View style="@style/v_w" />
+
+    <LinearLayout
+        android:id="@+id/item_exp"
+        android:visibility="gone"
+        style="@style/ll_h">
+
+        <TextView
+            android:id="@+id/tv_exp"
+            style="@style/tv_name"
+            android:layout_width="wrap_content"
+            android:text="@string/bank_card_exp" />
+
+        <EditText
+            android:id="@+id/et_exp"
+            style="@style/et_number"/>
+
+        <ImageView
+            style="@style/iv_32"
+            android:padding="5dp"
+            android:src="@mipmap/arrows_b_r"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <View style="@style/v_w" />
+    <Button
+        android:id="@+id/btn_next"
+        android:background="@color/app_bg"
+        style="@style/btn_next"
+        android:text="@string/next"/>
+</LinearLayout>

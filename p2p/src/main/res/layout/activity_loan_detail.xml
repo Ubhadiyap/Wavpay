@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/RootViewStyle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_title_bar" />
+
+    <ScrollView
+        android:id="@+id/activity_invest_project_detail_sv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/page_space">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rec_single_set_item"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/act_project_detail_tv_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="上海金汇南路个人房产抵押借款（2/2）"
+                        android:textColor="@color/text_black_deep"
+                        android:textSize="19sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+                    <TextView
+                        android:id="@+id/act_project_detail_tv_num"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@mipmap/bg_project_detail_project_id"
+                        android:gravity="center"
+                        android:text="JK_2014060484335"
+                        android:textColor="@color/text_gray" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.hbyundu.shop.vendor.widget.SDSimpleProjectDetailItemView
+                        android:id="@+id/act_project_detail_sdview_borrow_amount"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_project_detail_item" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@drawable/line_seperate_horizontal" />
+
+                    <com.hbyundu.shop.vendor.widget.SDSimpleProjectDetailItemView
+                        android:id="@+id/act_project_detail_sdview_rate"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_project_detail_item" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@drawable/line_seperate_horizontal" />
+
+                    <com.hbyundu.shop.vendor.widget.SDSimpleProjectDetailItemView
+                        android:id="@+id/act_project_detail_sdview_repay_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_project_detail_item" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@drawable/line_seperate_horizontal" />
+
+                    <com.hbyundu.shop.vendor.widget.SDSimpleProjectDetailItemView
+                        android:id="@+id/act_project_detail_sdview_repay_method"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_project_detail_item" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@drawable/line_seperate_horizontal" />
+
+                    <com.hbyundu.shop.vendor.widget.SDSimpleProjectDetailItemView
+                        android:id="@+id/act_project_detail_sdview_status"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_project_detail_item" />
+
+                    <View
+                        android:id="@+id/act_project_detail_sdview_delete_msg_divide"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@drawable/line_seperate_horizontal" />
+
+                    <com.hbyundu.shop.vendor.widget.SDSimpleProjectDetailMultiItemView
+                        android:id="@+id/act_project_detail_sdview_delete_msg"
+                        android:layout_width="match_parent"
+                        android:minHeight="@dimen/height_project_detail_item"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/activity_invest_project_detail_action_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@mipmap/bg_project_detail_bottom_btn_bar"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/act_project_detail_btn_look_detail"
+            style="@style/TextWhiteNormal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/act_project_detail_left_btn"
+            android:gravity="center"
+            android:text="查看详情"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/act_project_detail_btn_invest"
+            style="@style/TextWhiteNormal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@mipmap/act_project_detail_right_btn"
+            android:gravity="center"
+            android:text="@string/loan_invest" />
+    </LinearLayout>
+
+</LinearLayout>

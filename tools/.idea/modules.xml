@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../Wavpay.iml" filepath="$PROJECT_DIR$/../Wavpay.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../app/app.iml" filepath="$PROJECT_DIR$/../app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../sponge/sponge.iml" filepath="$PROJECT_DIR$/../sponge/sponge.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tools.iml" filepath="$PROJECT_DIR$/tools.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../wappay-lc/wappay-lc.iml" filepath="$PROJECT_DIR$/../wappay-lc/wappay-lc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../wavpay-ui/wavpay-ui.iml" filepath="$PROJECT_DIR$/../wavpay-ui/wavpay-ui.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0.1"
+        android:background="#A0A0A0" />
+
+    <LinearLayout
+        android:id="@+id/item_one"
+        style="@style/ll_h">
+
+        <TextView
+            android:id="@+id/tv_one"
+            style="@style/tv_name"
+            android:text="@string/c_card_type" />
+
+        <TextView
+            android:id="@+id/et_one"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:hint="Please Choose"
+            android:textSize="@dimen/sp_14" />
+
+        <ImageView
+            style="@style/iv_32"
+            android:paddingLeft="@dimen/dp_10"
+            android:paddingTop="@dimen/dp_10"
+            android:paddingBottom="@dimen/dp_10"
+            android:src="@mipmap/arrows_b_r" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0.1"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginRight="@dimen/dp_10"
+        android:background="@color/tv_color" />
+
+    <LinearLayout
+        android:id="@+id/item_two"
+        style="@style/ll_h">
+
+        <TextView
+            android:id="@+id/tv_two"
+            style="@style/tv_name"
+            android:text="@string/c_card_phone" />
+
+        <EditText
+            android:id="@+id/et_two"
+            style="@style/et_number"
+            android:hint="@string/h_card_phone" />
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:padding="5dp"
+            android:src="@mipmap/arrows_b_r"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/tv_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp">
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@mipmap/origin" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Accept"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="“User Agreement”"
+            android:textColor="@color/app_bg"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_next"
+        style="@style/btn_next"
+        android:text="@string/next"
+        android:background="#4A90E2" />
+</LinearLayout>

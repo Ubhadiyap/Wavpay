@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/RootViewStyle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_title_bar" />
+
+    <TextView
+        android:id="@+id/activity_change_password_mobile_tv"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin">
+
+        <EditText
+            android:id="@+id/activity_change_password_code_et"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:hint="@string/please_enter_verifying_code"
+            android:inputType="phone"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/activity_change_password_get_code_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="@string/get_verifying_code"
+            android:textColor="@android:color/black" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/activity_change_password_old_et"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/login_main_bg_et"
+        android:hint="@string/please_input_old_password"
+        android:inputType="textPassword"
+        android:paddingLeft="40dp"
+        android:textColor="@android:color/black"
+        android:textColorHint="#e5e4e4" />
+
+    <EditText
+        android:id="@+id/activity_change_password_new_et"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/login_main_bg_et"
+        android:hint="@string/please_input_new_password"
+        android:inputType="textPassword"
+        android:paddingLeft="40dp"
+        android:textColor="@android:color/black"
+        android:textColorHint="#e5e4e4" />
+
+    <Button
+        android:id="@+id/activity_change_password_submit_btn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="40dp"
+        android:background="@color/colorTitleBar"
+        android:text="@string/save" />
+
+</LinearLayout>
